@@ -1,0 +1,74 @@
+/* Floating Action Button */
+.fab {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    color: white;
+    font-size: 24px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for rotation */
+}
+
+.fab.rotate {
+    transform: translateX(-50%) rotate(45deg); /* Rotate 45 degrees */
+}
+
+
+/* Input Box Styling */
+.form-control-task {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+}
+
+.form-control-task:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th.task-column, 
+.table td.task-column {
+    width: 70%;
+}
+
+.table th.priority-column, 
+.table td.priority-column {
+    width: 15%;
+}
+
+.table th.actions-column, 
+.table td.actions-column {
+    width: 15%;
+}
+
+/* Badge Style for Priority */
+.badge-high { background-color: #dc3545; }
+.badge-medium { background-color: #ffc107; }
+.badge-low { background-color: #28a745; }
+
+/* Full-width Save Button */
+.btn-block {
+    width: 100%;
+}
+
+/* Table Row Hover Effect */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Action Icons Size */
+.action-btn i {
+    font-size: 0.875rem; /* Smaller icon size */
+}
